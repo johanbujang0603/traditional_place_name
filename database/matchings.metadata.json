@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"your_placenames.matchings"}],"uuid":"ac14812a9bdc4369837fef67f467b768"}

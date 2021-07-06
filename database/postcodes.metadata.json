@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"your_placenames.postcodes"}],"uuid":"641351f960694069a6c27c8565979c19"}
