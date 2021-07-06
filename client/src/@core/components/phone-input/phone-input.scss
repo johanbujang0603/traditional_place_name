@@ -1,0 +1,31 @@
+.react-tel-input {
+    .form-control {
+        width: 100% !important;
+        &.is-invalid {
+            border-color: #ea5455;
+            background-repeat: no-repeat;
+            background-size: calc(0.625em + 0.7rem) calc(0.625em + 0.7rem);
+            &:hover {
+                border-color: #ea5455 !important;
+            }
+            &:focus {
+                border-color: #ea5455;
+                box-shadow: 0 0 0 0.2rem rgba(234, 84, 85, 2.5);
+            }
+        }
+        &:hover {
+            border-color: #CACACA !important;
+        }
+        &:focus {
+            background-color: #fff !important;
+            border-color: #e42f12 !important;
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15) !important;
+        }
+    }
+}
+
+.react-tel-input ~ .spinner-border {
+    position: absolute;
+    right: 25px;
+    top: 33px;
+}

@@ -1,0 +1,73 @@
+@import '../../../base/bootstrap-extended/include';
+@import '../../../base/components/include';
+
+.dropzone {
+  min-height: 100px;
+  border: 2px dashed $light;
+  background: $body-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:focus {
+    outline: 0;
+  }
+  p {
+    margin: 0 0 .5rem 0;
+  }
+}
+.dz-thumb {
+  max-width: 100%;
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  padding: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.thumb-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.dz-thumb-inner {
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+  width: 19rem;
+  height: 12rem;
+  max-width: 100%;
+  position: relative;
+  &:hover {
+    .photo-hover-actions {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+.photo-hover-actions {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.75);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-in-out .15s;
+  a {
+    border-radius: 4px;
+    padding: 5px;
+  }
+}
+.dz-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
