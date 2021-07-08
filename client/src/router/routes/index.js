@@ -10,6 +10,14 @@ const Routes = [
     component: lazy(() => import('../../views/pages/dashboard'))
   },
   {
+    path: '/postcodes',
+    component: lazy(() => import('../../views/pages/postcodes'))
+  },
+  {
+    path: '/placenames',
+    component: lazy(() => import('../../views/pages/placenames'))
+  },
+  {
     path: '/login',
     component: lazy(() => import('../../views/pages/authentication/Login')),
     layout: 'BlankLayout',

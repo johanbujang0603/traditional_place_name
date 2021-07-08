@@ -9,5 +9,19 @@ export default [
     type: "item",
     icon: <RiDashboard2Line size={24} />,
     navLink: "/dashboard"
+  },
+  {
+    id: "postcodes",
+    title: "PostCodes",
+    type: "item",
+    icon: <RiDashboard2Line size={24} />,
+    navLink: "/postcodes"
+  },
+  {
+    id: "placenames",
+    title: "Placenames",
+    type: "item",
+    icon: <RiDashboard2Line size={24} />,
+    navLink: "/placenames"
   }
 ]

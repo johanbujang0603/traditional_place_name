@@ -17,6 +17,16 @@ router.get("/postcodes", async (req, res) => {
     }
 });
 
+router.get("/all-postcodes", async (req, res) => {
+    try {
+        const postCodes = await Postcode.find();
+        return res.json({ success: true, data: postCodes });
+    } catch (err) {
+        console.log(err);
+        return res.json({ success: false, message: 'Something went wrong!' });
+    }
+});
+
 router.get("/placenames", async (req, res) => {
     try {
         const placeNames = await Placename.find();
