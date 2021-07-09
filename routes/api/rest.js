@@ -27,10 +27,41 @@ router.get("/all-postcodes", async (req, res) => {
     }
 });
 
+router.post("/update-postcode", async (req, res) => {
+    try {
+        const { data, id } = req.body;
+        await Postcode.findByIdAndUpdate(id, {
+            $set: {
+                ...data
+            }
+        });
+        return res.json({ success: true });
+    } catch (err) {
+        console.log(err);
+        return res.json({ success: false, message: 'Something went wrong!' });
+    }
+});
+
 router.get("/placenames", async (req, res) => {
     try {
         const placeNames = await Placename.find();
         return res.json({ success: true, data: placeNames });
+    } catch (err) {
+        console.log(err);
+        return res.json({ success: false, message: 'Something went wrong!' });
+    }
+});
+
+router.post("/update-placename", async (req, res) => {
+    try {
+        const { name, id } = req.body;
+        await Placename.findByIdAndUpdate(id, {
+            $set: {
+                name: name,
+                value: name
+            }
+        });
+        return res.json({ success: true });
     } catch (err) {
         console.log(err);
         return res.json({ success: false, message: 'Something went wrong!' });

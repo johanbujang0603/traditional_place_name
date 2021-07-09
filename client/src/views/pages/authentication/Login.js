@@ -88,7 +88,7 @@ const Login = () => {
         </Col>
         <Col className='d-flex align-items-center auth-bg px-2 p-lg-5 position-relative' lg='4' sm='12'>
           <Col className='px-xl-2 mx-auto' sm='8' md='6' lg='12'>
-            <img src={appLogo}  width={200} alt="logo" className='mb-2' />
+            <img src={appLogo}  width={250} alt="logo" className='mb-2' />
             <CardTitle tag='h2' className='font-weight-bold mb-1'>
               Welcome! 👋
             </CardTitle>
